@@ -25,4 +25,5 @@ public class Cafe {
 
         scanner.close() ;
     }
+    
 }
