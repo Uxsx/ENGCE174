@@ -5,11 +5,11 @@ public class Multiplication {
 
         Scanner scanner = new Scanner(System.in) ;
 
-        int mom = scanner.nextInt() ;
+        int n = scanner.nextInt() ;
 
-        for (int i = 1; i <= 12; i++) {
-            int result = mom * i ;
-            System.out.println(mom + " x " + i + " = " + result) ;
+        for (int i = 1; i <= 12 ; i++){
+            int result = n * i ;
+            System.out.println(n + " * " + i + " = " + result) ;
         }
 
         scanner.close() ;
