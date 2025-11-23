@@ -4,24 +4,21 @@ public class AddNtoMax {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in) ;
 
-        System.out.print("กรุณาระบุจำนวนตัวเลข : ");
         int n = scanner.nextInt() ;
 
-        int[] numbers = new int[n] ;
-
+        int[] num = new int[n] ;
         for (int i = 0; i < n; i++) {
-            numbers[i] = scanner.nextInt() ;
+            num[i] = scanner.nextInt() ;
         }
 
-        int max = numbers[0] ;
-
+        int max = num[0] ;
         for (int i = 1; i < n; i++) {
-            if (numbers[i] > max) {
-                max = numbers[i] ;
+            if (num[i] > max) {
+                max = num[i] ;
             }
         }
 
-        System.out.println("ค่าที่มากที่สุด คือ: " + max) ;
+        System.out.println(max) ;
 
         scanner.close() ;
     }

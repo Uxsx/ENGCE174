@@ -6,31 +6,30 @@ public class InvManagement {
 
         int n = scanner.nextInt() ;
 
-        int[] productID = new int[n] ;
-        int[] stockItems = new int[n] ;
+        int[] proID = new int[n] ;
+        int[] stoItem = new int[n] ;
 
         for (int i = 0; i < n; i++) {
-            productID[i] = scanner.nextInt() ;
-            stockItems[i] = scanner.nextInt() ;
+            proID[i] = scanner.nextInt() ;
+            stoItem[i] = scanner.nextInt() ;
         }
 
-        int searchID = scanner.nextInt() ;
+        int seID = scanner.nextInt() ;
 
-        boolean isFound = false ;
+        boolean isFoun = false ;
 
         for (int i = 0; i < n; i++) {
-            if (productID[i] == searchID) {
-                System.out.println("จำนวนคงคลัง : " + stockItems[i]) ;
-                isFound = true ; 
+            if (proID[i] == seID) {
+                System.out.println(proID[i]) ;
+                isFoun = true ; 
                 break ;
             }
         }
 
-        if (!isFound) {
-            System.out.print("Product " + searchID + " not found") ;
+        if (isFoun == false) {
+            System.out.print("Product " + seID + " not found") ;
         }
 
         scanner.close() ;
     }
-    
 }
