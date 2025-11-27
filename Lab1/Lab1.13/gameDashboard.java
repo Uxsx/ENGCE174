@@ -7,19 +7,19 @@ public class gameDashboard {
         int R = scanner.nextInt() ;
         int C = scanner.nextInt() ;
 
-        int[][] grid = new int[R][C] ;
-        int onCount = 0 ;
+        int[][] g = new int[R][C] ;
+        int cou = 0 ;
 
         for (int i = 0; i < R; i++) {
             for (int j = 0; j < C; j++) {
-                grid[i][j] = scanner.nextInt() ;
-                if (grid[i][j] == 1) {
-                    onCount++ ;
+                g[i][j] = scanner.nextInt() ;
+                if (g[i][j] == 1) {
+                    cou++ ;
                 }
             }
         }
 
-        System.out.println(onCount) ;
+        System.out.println(cou) ;
 
         scanner.close() ;
     }
