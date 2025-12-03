@@ -1,11 +1,8 @@
 public class BankAccount2 {
-    // Attributes
-    private String ownerName;
     private double balance;
 
     // Constructor
     public BankAccount2(String ownerName, double initialBalance) {
-        this.ownerName = ownerName;
         this.balance = initialBalance;
     }
 
