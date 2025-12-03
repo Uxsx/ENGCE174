@@ -1,28 +1,20 @@
-import java.util.Scanner ;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in) ;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("account owner name: ") ;
-        String owNa = scanner.nextLine();
+        System.out.print("Enter width: ");
+        double width = scanner.nextDouble();
 
-        System.out.print("initial balance: ") ;
-        double inBa = scanner.nextDouble();
-        
-        scanner.nextLine() ; 
+        System.out.print("Enter height: ");
+        double height = scanner.nextDouble();
 
-        System.out.print("deposit amount: ") ;
-        double depositAmount = scanner.nextDouble() ;
-        
-        scanner.nextLine() ;
+        scanner.close();
 
-        scanner.close() ;
-        
-        BankAccount acc = new BankAccount(owNa, inBa) ;
+        Rectangle myRectangle = new Rectangle(width, height);
 
-        acc.deposit(depositAmount) ;
-
-        acc.displaySummary() ;
+        System.out.println("Area: " + myRectangle.getArea());
+        System.out.println("Perimeter: " + myRectangle.getPerimeter());
     }
 }

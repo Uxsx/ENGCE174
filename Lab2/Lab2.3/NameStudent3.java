@@ -15,7 +15,7 @@ public class NameStudent3 {
             System.out.print("INPUT NAME : ") ;
             String na = scan.nextLine() ;
             
-            Student3 std3 = new Student3(id, na) ;
+            new Student3(id, na) ;
         }
 
         System.out.println("Count Student " + Student3.getCount());
