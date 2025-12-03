@@ -1,8 +1,8 @@
-public class BankAccount {
+public class BankAccount3 {
     private String name ;
     private double balance ;
 
-    public BankAccount(String n, double balance) {
+    public BankAccount3(String n, double balance) {
         this.name = n ;
         this.balance = balance ;
     }

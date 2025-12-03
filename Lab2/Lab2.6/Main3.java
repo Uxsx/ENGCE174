@@ -1,6 +1,6 @@
 import java.util.Scanner ;
 
-public class Main {
+public class Main3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in) ;
 
@@ -19,7 +19,7 @@ public class Main {
 
         scanner.close() ;
         
-        BankAccount acc = new BankAccount(owNa, inBa) ;
+        BankAccount3 acc = new BankAccount3(owNa, inBa) ;
 
         acc.deposit(depositAmount) ;
 

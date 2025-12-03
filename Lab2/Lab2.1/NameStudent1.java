@@ -1,6 +1,6 @@
 import java.util.Scanner ;
 
-public class NameStudent {
+public class NameStudent1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in) ;
         
@@ -10,7 +10,7 @@ public class NameStudent {
         System.out.print("Input Name : ") ;
         String nameIn = scan.nextLine() ;
 
-        Student std = new Student(idIn, nameIn) ;
+        Student1 std = new Student1(idIn, nameIn) ;
 
         System.out.println(std.getStudentId());
         System.out.println(std.getName());
