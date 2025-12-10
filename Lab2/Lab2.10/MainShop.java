@@ -12,9 +12,6 @@ public class MainShop {
         for (int i = 0; i < N; i++) {
             String name = scanner.nextLine();
 
-            while (!scanner.hasNextDouble()) {
-                scanner.next();
-            }
             double price = scanner.nextDouble();
             scanner.nextLine();
 
@@ -23,7 +20,7 @@ public class MainShop {
         }
 
         double total = cart.calculateTotalPrice();
-        System.out.print(total);
+        System.out.print("Total Price "+ total);
 
         scanner.close();
     }
