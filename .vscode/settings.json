@@ -1,9 +1,18 @@
 {
   "java.project.sourcePaths": [
+    "Lab3/Lab3.9",
+    "Lab3/Lab3.8",
+    "Lab3/Lab3.7",
+    "Lab3/Lab3.6",
     "Lab3/Lab3.5",
     "Lab3/Lab3.4",
     "Lab3/Lab3.3",
     "Lab3/Lab3.2",
+    "Lab3/Lab3.14",
+    "Lab3/Lab3.13",
+    "Lab3/Lab3.12",
+    "Lab3/Lab3.11",
+    "Lab3/Lab3.10",
     "Lab3/Lab3.1",
     "Lab2/Lab2.9",
     "Lab2/Lab2.8",
@@ -17,6 +26,6 @@
     "Lab2/Lab2.11",
     "Lab2/Lab2.10",
     "Lab2/Lab2.1",
-    "Lab3/Lab3.6"
+    "Lab3/Lab3.15"
   ]
 }
