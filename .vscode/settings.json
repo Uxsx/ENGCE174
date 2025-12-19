@@ -28,5 +28,6 @@
     "Lab2/Lab2.10",
     "Lab2/Lab2.1",
     "Lab4"
-  ]
+  ],
+  "java.debug.settings.onBuildFailureProceed": true
 }

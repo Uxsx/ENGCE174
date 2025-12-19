@@ -1,3 +1,4 @@
+package Lab41;
 import java.util.Scanner;
 
 class Book {
