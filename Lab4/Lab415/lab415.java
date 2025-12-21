@@ -1,11 +1,11 @@
 package Lab415;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 class AuditRecord {
     private final String user;
     private final String[] logMessages;
-
     private static int maxMessages = 3;
 
     public AuditRecord(String user) {
@@ -14,13 +14,10 @@ class AuditRecord {
 
     public AuditRecord(String user, String[] logs) {
         this.user = user;
-        
         if (logs.length > maxMessages) {
-            this.logMessages = new String[maxMessages];
-            System.arraycopy(logs, logs.length - maxMessages, this.logMessages, 0, maxMessages);
+            this.logMessages = Arrays.copyOfRange(logs, logs.length - maxMessages, logs.length);
         } else {
-            this.logMessages = new String[logs.length];
-            System.arraycopy(logs, 0, this.logMessages, 0, logs.length);
+            this.logMessages = Arrays.copyOf(logs, logs.length);
         }
     }
 
@@ -35,10 +32,8 @@ class AuditRecord {
 
     public AuditRecord addMessage(String message) {
         if (this.logMessages.length < maxMessages) {
-            // สร้างอาเรย์ใหม่ที่มีขนาดเพิ่มขึ้น 1
-            String[] newLogs = new String[this.logMessages.length + 1];
-            System.arraycopy(this.logMessages, 0, newLogs, 0, this.logMessages.length);
-            newLogs[this.logMessages.length] = message;
+            String[] newLogs = Arrays.copyOf(this.logMessages, this.logMessages.length + 1);
+            newLogs[newLogs.length - 1] = message;
             
             System.out.println(message + " added.");
             return new AuditRecord(this.user, newLogs);
@@ -49,11 +44,8 @@ class AuditRecord {
     }
 
     public void displayLog() {
-        System.out.print("User: " + user + ", Logs: " + logMessages.length + " [");
-        for (int i = 0; i < logMessages.length; i++) {
-            System.out.print(logMessages[i] + (i == logMessages.length - 1 ? "" : ", "));
-        }
-        System.out.println("]");
+        String logsString = String.join(", ", logMessages);
+        System.out.printf("User: %s, Logs: %d [%s]%n", user, logMessages.length, logsString);
     }
 }
 
@@ -62,8 +54,7 @@ public class lab415 {
         Scanner scanner = new Scanner(System.in);
 
         if (scanner.hasNextInt()) {
-            int policy = scanner.nextInt();
-            AuditRecord.setPolicy(policy);
+            AuditRecord.setPolicy(scanner.nextInt());
             scanner.nextLine();
         }
 
@@ -77,12 +68,10 @@ public class lab415 {
 
                 for (int i = 0; i < n; i++) {
                     if (scanner.hasNextLine()) {
-                        String msg = scanner.nextLine();
-                        record = record.addMessage(msg);
+                        record = record.addMessage(scanner.nextLine());
                     }
                 }
             }
-            
             record.displayLog();
         }
         scanner.close();
