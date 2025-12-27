@@ -1,5 +1,6 @@
 {
   "java.project.sourcePaths": [
+    "Lab4",
     "Lab3/Lab3.9",
     "Lab3/Lab3.8",
     "Lab3/Lab3.7",
@@ -27,7 +28,7 @@
     "Lab2/Lab2.11",
     "Lab2/Lab2.10",
     "Lab2/Lab2.1",
-    "Lab4"
+    "Lab5/Lab51"
   ],
   "java.debug.settings.onBuildFailureProceed": true
 }
