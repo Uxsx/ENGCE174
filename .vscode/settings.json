@@ -1,5 +1,13 @@
 {
   "java.project.sourcePaths": [
+    "Lab5/Lab59",
+    "Lab5/Lab58",
+    "Lab5/Lab57",
+    "Lab5/Lab56",
+    "Lab5/Lab55",
+    "Lab5/Lab54",
+    "Lab5/Lab53",
+    "Lab5/Lab52",
     "Lab5/Lab51",
     "Lab4",
     "Lab3/Lab3.9",
@@ -29,7 +37,7 @@
     "Lab2/Lab2.11",
     "Lab2/Lab2.10",
     "Lab2/Lab2.1",
-    "Lab5/Lab52"
+    "Lab5/Lab510"
   ],
   "java.debug.settings.onBuildFailureProceed": true
 }
